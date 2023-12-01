@@ -6,11 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>SoSerious</title>
     <link rel="stylesheet" href="src/css/style.css">
+        <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+
 </head>
 <body class="index">
     <header>
        <div class="name-head">
-            <a href="/"><h1>SoSerious</h1></a>
+            <a href="/"><img src="assets/img/logo.svg" alt="logo"></a>
        </div> 
 
        <div class="nav-toogle" onclick="document.documentElement.classList.toggle('menu-open')">
@@ -31,22 +38,126 @@
                 
                 
             </ul>
-            <ul class="menu-test2">
+            <ul class="menu-grid-line">
                 <hr class="ligne-header2">
-                <li><a href="#"><p>Contact</p></a></li>
-                <li><a href="#"><p>à propos</p></a></li>
-                <li><a href="#"><p>Glossaire</p></a></li>
+                <ul class="menu-test2">
+                    
+                    <li><a href="#"><p>Contact</p></a></li>
+                    <li><a href="#"><p>à propos</p></a></li>
+                    <li><a href="#"><p>Glossaire</p></a></li>
+                </ul>
             </ul>
         </nav>
     </header>
 
     <main class="hero-head">
         <div class="hero"></div>
-        
+        <div class="hero-text">
+            <h1 class="titre">
+                <span>WHY</span> 
+                <span> SO </span>
+                <span> SERIOUS </span>
+                <span> ? </span>
+            </h1>
+
+            <div class="chevron">
+                <img src="assets/img/double-down-sign.svg" alt="">
+            </div>
+        </div>
+       
+
     </main>
+
+    <section class="intro">
+        <h1 class="intro-h1">
+            <span>NE</span> 
+            <span> PRENEZ </span>
+            <span> PAS LA </span>
+            <span> VIE TROP </span>
+            <span> AU </span>
+            <span class="red-text"> SERIEUX </span>
+        </h1>
+        <hr>
+        <p class="intro-text">Sur ce site, vous trouverez des films, des livres et de la musique qui correspondent à l'ambiance de la réplique "Why so serious" et du film The Dark Knight. Nous avons sélectionné ces contenus avec soin afin qu'ils vous permettent de vous détendre, de réfléchir et de vous exprimer.</p>
+        <hr>
+    </section>
+
+    <div class="card">
+        <div class="parent">
+            <div class="div1"> <img class="soseriousimg" src="assets/img/SOSERIOUS.webp" alt=""> </div>
+            <div class="div2"> <img class="citation-img" src="assets/img/citation-img.webp" alt=""></div>
+            <div class="div3"> <h2>Une réplique iconique</h2></div>
+            <div class="div4"> <p> "Why so serious ?" est une invitation à la liberté d'expression. Le Joker est un personnage qui ne prend pas la vie au sérieux </p> </div>
+            <div class="div5"> <button class="btn-1"> En savoir plus </button> </div>
+            </div>
+        
+    </div>
+
+    <hr class="card-line">
+
+    <section> 
+        <div class="swiper-container">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="assets/img/carousel-img-1.webp">
+                    <h3 class="slide-title">Un film ambitieux</h3>
+                    <div class="slide-content">
+                        <p class="slide-legend">The Dark Knight est un film ambitieux dans son exploration des thèmes de la corruption, de la folie et de la violence. Et il est ambitieux dans son utilisation des effets spéciaux et de la mise en scène.</p>
+                        <button class="slide-button">En savoir plus</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/img/carousel-img-2.webp">
+                    <h3 class="slide-title">Un réalisateur de génie</h3>
+                    <div class="slide-content">
+                        <p class="slide-legend">Christopher Nolan est un réalisateur britannique né en 1970. Il est connu pour ses films d'action, de science-fiction et de suspense, qui se caractérisent par leur style visuel unique, leurs histoires complexes et leur sens de l'innovation.</p>
+                        <button class="slide-button">En savoir plus</button>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/img/carousel-img-3.webp">
+                    <h3 class="slide-title">Une bande son unique</h3>
+                    <div class="slide-content">
+                        <p class="slide-legend">why so serious de hans zimmer bande son de neuf minutes est basée sur deux notes jouées par un violoncelle électrique, un violon solo, des guitares et une section de cordes. Zimmer a comparé son style au groupe Kraftwerk, originaire de son Allemagne natale.</p>
+                        <button class="slide-button">En savoir plus</button>
+                    </div>
+                </div>
+            </div>
+           <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+            
+           
+        </div>
+    </section>
+
+    <div class="card">
+        <div class="parent">
+            <div class="div1"> <img class="soseriousimg" src="assets/img/SOSERIOUS.webp" alt=""> </div>
+            <div class="div2"> <img class="citation-img" src="assets/img/citation-img.webp" alt=""></div>
+            <div class="div3"> <h2>Un livre spectaculaire</h2></div>
+            <div class="div4"> <p> Suicide squad.Volume1.Kicked in the teeth est bande dessinée, une équipe de super-vilains est recrutée par le gouvernement américain pour empêcher un groupe de terroristes d'utiliser une bombe nucléaire. L'histoire est pleine de rebondissements et de suspense.</p> </div>
+            <div class="div5"> <button class="btn-1"> En savoir plus </button> </div>
+            </div>
+        
+    </div>
     
-
-
-   
 </body>
+<script>
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 50,
+        
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+           
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true,
+        },
+    });
+    </script>
 </html>

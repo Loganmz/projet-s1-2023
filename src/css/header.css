@@ -32,6 +32,7 @@
     .menu-test2 {
         display: flex;
         flex-direction: row;
+        
     }
     .menu-test2 li {
         list-style: none;
@@ -58,21 +59,22 @@
         padding-left: -2rem;
     }
     .langue-line a{
-        top: 10px;
+        top: 80px;
         position: absolute;
         padding-left: 12rem;
     }
     .ligne-header1 {
         width: 170px;
         position: absolute;
-        top: 36px;
+        top: 110px;
         right: 102px;
 
     }
     .ligne-header2 {
         width: 170px;
-        
+        position: absolute;
         right: 102px;
+        margin: 0;
         margin-bottom: 15px;
 
     }
@@ -84,7 +86,6 @@
     header{
         position: relative;
         top: 32px;
-        padding-top: 10px;
         padding-bottom: 5px;
         display: flex;
         justify-content: space-between;
@@ -94,8 +95,12 @@
         
     }    
 
+    .header .div {
+        z-index: 20;
+    }
+
     .menu{
-        margin-top: 36px;
+        margin-top: 0px;
         margin-left: -10rem;
     }
 
@@ -142,21 +147,21 @@
     }    
 
     .logo-head{
-        margin-top: -0.45rem;
+        margin-top: -0.5rem;
         top: 0;
 
     }    
     
     .name-head{
+        margin-top: 14px;
         z-index: 10;
     }
 
 
     .menu{
-        background: rgb(215,215,215);
         background: #0D0D0D;
         position: fixed;
-        top: 36px;
+        top: 0px;
         left: 0;
         bottom: 0;
         right: 0;
@@ -166,7 +171,7 @@
         justify-content: center;
         transform: translateX(200vw);
         transition: all .5s;
-        z-index: 1;
+        z-index: 0;
     }    
     .header-position {
         display: flex;
@@ -177,7 +182,7 @@
     }    
 
     .menu-open,
-    .menu-open body {
+    .menu-open .hero-head {
         overflow: hidden;
     }    
 
@@ -233,7 +238,10 @@
         padding-left: 181px !important;
        
     }
-}    
+    .langue-line {
+        z-index: 0;
+    }
 
 
 
+}

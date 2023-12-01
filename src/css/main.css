@@ -1,3 +1,7 @@
+img {
+    object-fit: cover;
+}
+
 .titre-type h2{
     font-size: 2.875rem;
   
@@ -82,3 +86,115 @@ a{
 
 
 
+.hero {
+    background-image: url('/assets/img/hero-image.webp');
+    background-size: 375px 812px; /* Set the size of the background image */
+    background-position: top; /* Position the image at the top of the page */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+    position: absolute; /* Needed for z-index to work */
+    z-index: -1; /* Place the image behind everything else */
+    top: 0; /* Position at the top of the page */
+    left: 0; /* Position at the left of the page */
+    width: 100%; /* Take the full width of the viewport */
+    height: 100%; /* Take the full height of the viewport */
+    object-fit: cover;
+}
+
+.hero .h1 {
+    font-size: 2rem;
+ 
+    font-weight: 400;
+    font-size: 64px;
+}
+
+
+
+.titre {
+    font-family: "NunitoSans";
+    font-variation-settings:  "wght" 1000, "wdth" 75, "opsz" 12, "YTLC" 540;
+    display: flex;
+    font-size: 50px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    animation:reverse ;
+    animation-name: slidein;
+    animation-duration: 2s;
+    color: rgba(0, 0, 0, 0.01);
+    gap: 10px;
+    padding-top: 128px;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: rgb(255, 255, 255);
+    text-shadow: 4px 7px 5px rgba(0, 0, 0);
+
+
+    
+    
+    
+ 
+}
+
+
+
+@keyframes slidein {
+  100% {
+    filter: opacity(0%);
+    font-variation-settings: "wght" 539.41, "wdth" 96.31, "opsz" 6, "YTLC" 481.76;
+  }
+
+
+  0% {
+    filter: opacity(100%);
+    font-variation-settings: "wght" 1000, "wdth" 75, "opsz" 12, "YTLC" 540;
+  }
+}
+
+.chevron {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.hero-text {
+    display: flex;
+    flex-direction: column;
+    gap: 200px;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.intro-h1 {
+    width: 209px;
+    color: var(--white, #FFF);
+    font-family: Satoshi;
+    font-size: 43.569px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-left: 30px;
+    margin-top: 40px;
+}
+
+.red-text {
+    color: #C21A27;
+}
+.intro hr {
+    width: 307px;
+    color: #FFF;
+}
+.intro-text{
+width: 307px;
+color: var(--C8C8C8, #C8C8C8);
+font-family: Helvetica;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+margin-left: 30px;
+}
